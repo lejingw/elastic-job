@@ -28,7 +28,7 @@ import com.dangdang.example.elasticjob.core.job.ThroughputDataFlowJobDemo;
 
 public final class JobMain {
     
-    private final ZookeeperConfiguration zkConfig = new ZookeeperConfiguration("localhost:2181", "elasticjob-example", 1000, 3000, 3);
+    private final ZookeeperConfiguration zkConfig = new ZookeeperConfiguration("192.168.0.11:2181", "elasticjob-example", 1000, 3000, 3);
     
     private final CoordinatorRegistryCenter regCenter = new ZookeeperRegistryCenter(zkConfig);
     
